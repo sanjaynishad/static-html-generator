@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>{{title}}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- LIBRARIES <link rel="stylesheet" href="libs/bootstrap-4.3.1/css/bootstrap.css"> -->
+
+    <!-- build:css common.min.css -->
+    <!-- COMMON CUSTOM STYLES HERE <link rel="stylesheet" href="css/styles.css"> -->
+    <!-- endbuild -->
+
+    {{{_sections.styles}}}
+    <!-- Page level styles will be included here -->
+    <!-- 
+        use handlebars helper #section on page.html as below, e.g.
+        {{#section 'styles'}}
+        <link rel="stylesheet" href="css/page.css">
+        {{/section}}
+    -->
+</head>
+
+<body>
+    <header style="background: #ccc; padding: 15px;">
+        Header
+    </header>
+
+    {{{body}}}
+
+    <footer style="background: #ccc; padding: 15px;">
+        Footer
+    </footer>
+
+    <!-- LIBRARIES <script src="libs/bootstrap-4.3.1/js/bootstrap.bundle.js"></script> -->
+
+    <!-- build:js common.min.js -->
+    <!-- COMMON CUSTOM JS HERE <script src="js/main.js" ></script> -->
+    <!-- endbuild -->
+
+    {{{_sections.scripts}}}
+    <!-- Page level scripts will be included here -->
+    <!-- 
+        use handlebars helper #section on page.html as below, e.g.
+        {{#section 'scripts'}}
+        <script src="js/page.js" ></script>
+        {{/section}}
+    -->
+</body>
+
+</html>
