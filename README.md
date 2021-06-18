@@ -14,7 +14,8 @@ You can just copy your HTML template into the `www` folder and generate ready to
 - `hbs` - context data as per pages, keys must match the `<name>.hbs` files
 - `ftp` - FTP login info to deploy the static site
 
-./www/config.json
+`./www/config.json`
+
 ```
 {
     "partials": "./partials",
