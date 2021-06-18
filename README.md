@@ -10,11 +10,9 @@ You can just copy your HTML template into the `www` folder and generate ready to
 - `npm run deploy` to deploy the production build (`dist` folder)
 
 ## Configs
-`partials` - partial folder to be used for `gulp-compile-handlebars`
-
-`hbs` - context data as per pages, keys must match the `<name>.hbs` files
-
-`ftp` - FTP login info to deploy the static site
+- `partials` - partial folder to be used for `gulp-compile-handlebars`
+- `hbs` - context data as per pages, keys must match the `<name>.hbs` files
+- `ftp` - FTP login info to deploy the static site
 
 ./www/config.json
 ```
