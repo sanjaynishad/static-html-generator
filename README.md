@@ -1,22 +1,42 @@
 # static-html-generator
-This is a project template to generate html files from a template using handlebars.
-You can just copy your html template into `www` folder and generate ready to deploy a static website, with minify and combine CS/CSS.
-
-This template is using the handlebars template engine.
+This is a static site boilerplate using gulp and handlebars to generate static HTML files. This is using `gulp` for build and dev automation, and `handlbar` for the template engine.
+You can just copy your HTML template into the `www` folder and generate ready to deploy a static website, with minify and combine JS/CSS.
 
 ## Instructions
 - `git clone https://github.com/sanjaynishad/static-html-generator.git`
-- Copy/create your HTML template inside `www` folder
-- `layouts` and `partials` folders must be inside `www`
-- Find more instructions in `layouts/main.html` comments
-- Modify `layouts/main.html` according to your html template
 - `npm install` to install the dependencies
 - `npm start` to start developing on the local machine
 - `npm run build` to build the project for production
-- `dist` folder is ready to deploy, enjoy! 🙂
+- `npm run deploy` to deploy the production build (`dist` folder)
+
+## Configs
+`partials` - partial folder to be used for `gulp-compile-handlebars`
+`hbs` - context data as per pages, keys must match the `<name>.hbs` files
+`ftp` - FTP login info to deploy the static site
+
+./www/config.json
+```
+{
+    "partials": "./partials",
+    "hbs": {
+        "index": {
+            "title": "This is home page.",
+            "description": "This is another data to be passed in handlebar template and added to meta tag, check head.hbs"
+        },
+        "page1": {},
+        "page2": {}
+    },
+    "ftp": {
+        "host": "example.com",
+        "user": "user",
+        "password": "password",
+        "folder": "/public_html"
+    }
+}
+```
 
 ## Not fulfilling all requirements? Need to add more functionality?
-- For the templating syntax [Handlebars](https://handlebarsjs.com/), [express-handlebars](https://github.com/express-handlebars/express-handlebars)
+- For the templating syntax [Handlebars](https://handlebarsjs.com/)
 - For the [Gulp](https://gulpjs.com/)
 
 ## Contribution
