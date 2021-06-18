@@ -11,7 +11,7 @@ You can just copy your HTML template into the `www` folder and generate ready to
 
 ## Configs
 - `partials` - partial folder to be used for `gulp-compile-handlebars`
-- `hbs` - context data as per pages, keys must match the `<name>.hbs` files
+- `hbs` - context data as per pages, keys must match the `<name>.hbs` file's name
 - `ftp` - FTP login info to deploy the static site
 
 `./www/config.json`
