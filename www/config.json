@@ -1,0 +1,17 @@
+{
+    "partials": "./partials",
+    "hbs": {
+        "index": {
+            "title": "This is home page.",
+            "description": "This is another data to be passed in handlebar template and added to meta tag, check head.hbs"
+        },
+        "page1": {},
+        "page2": {}
+    },
+    "ftp": {
+        "host": "example.com",
+        "user": "user",
+        "password": "password",
+        "folder": "/public_html"
+    }
+}
