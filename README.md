@@ -3,7 +3,7 @@ This is a static site boilerplate using gulp and handlebars to generate static H
 You can just copy your HTML template into the `www` folder and generate ready to deploy a static website, with minify and combine JS/CSS.
 
 ## Instructions
-- `git clone https://github.com/sanjaynishad/static-html-generator.git`
+- `git clone https://github.com/sanjaynishad/static-html-generator.git` or [download](https://github.com/sanjaynishad/static-html-generator/archive/refs/heads/master.zip)
 - `npm install` to install the dependencies
 - `npm start` to start developing on the local machine
 - `npm run build` to build the project for production
